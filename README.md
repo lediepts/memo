@@ -30,7 +30,7 @@
   - CSS mô tả cách các phần tử được hiển thị trên màn hình, trên giấy, trong lời nói, hoặc trên các phương tiện khác.
   - Phiên bản hiện tại là CSS3
 ---
-## Cấu trúc file HTML
+<!-- ## Cấu trúc file HTML -->
 
 ## Comments trong HTML
 
