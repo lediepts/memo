@@ -1,3 +1,4 @@
+[![CHECK](https://github.com/lediepts/redmine-system/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/lediepts/redmine-system/actions/workflows/blank.yml)
 # ***Khóa học HTML***
 - Author: <diep.le@0004s.com>
 - Create at : 03/2021
