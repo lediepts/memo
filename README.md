@@ -31,7 +31,7 @@
   - Phiên bản hiện tại là CSS3
 ---
 <!-- ## Cấu trúc file HTML -->
-## Comments trong HTML
+<!-- ## Comments trong HTML
 
 ## Test tính cẩn thận và chỉn chu của bạn
 
@@ -240,4 +240,4 @@
 ## Dựng khung Footer
 
 ## Footer CSS
- -->
+ --> -->
