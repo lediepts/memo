@@ -200,7 +200,26 @@
 <video>
 <wbr>
 ```
+### HTML attributes (Thuộc tính của thẻ HTML)
 
+[Link tham khảo](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+- Thuộc tính thường dùng
+  - class
+  ```html:
+  <p class="class1 class2">Above point sounds a bit obvious. Remove/rewrite?</p>
+  ```
+  - id
+  ```html:
+  <p id="id1">Above point sounds a bit obvious. Remove/rewrite?</p>
+  ```
+- Sự kiện thường dùng
+  - onclick: Sự kiện click vào element.
+  - onchange: Sự kiện thay đổi giá trị ở các thẻ input.
+  - onkeydown: Sự kiện nhấn phím .
+  - onmouseenter: Sự kiện di chuột lên element.
+  - onmouseleave: Sự kiện di chuột ra khỏi element.
+  - onsubmit: Sự kiện submit form nhập liệu.
 <!-- ## Attribute trong HTML -->
 
 <!-- ## Sử dụng CSS trong HTML -->
