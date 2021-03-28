@@ -226,12 +226,33 @@
   - onmouseenter: Sự kiện di chuột lên element.
   - onmouseleave: Sự kiện di chuột ra khỏi element.
   - onsubmit: Sự kiện submit form nhập liệu.
-<!-- ## Attribute trong HTML -->
 
-<!-- ## Sử dụng CSS trong HTML -->
+## Sử dụng CSS trong HTML
 
-<!-- ## ID và Class -->
+- Cú pháp
+  ```css:
+  Selector {
+    Property : value;
+  }
+  ```
+  - Selector: Bộ chọn thành phần trong html -> [Các kiểu chọn](https://www.w3schools.com/cssref/css_selectors.asp)
+  - Property: Thuộc tính css-> [List thuộc tính](https://www.w3schools.com/cssref/)
+  - value: Giá trị của thuộc tính 
+- ví dụ
+  ```css:
+  p {
+    background-color: yellow;
+    color: red;
+    font-size: 24px;
+  }
+  ```
+- Here are the block-level elements in HTML:
 
+  ![block](./images/block.png)
+
+- Here are the inline elements in HTML:
+
+  ![block](./images/inline.png)
 <!-- ## CSS selector -->
 
 <!-- ## Độ ưu tiên trong CSS -->
