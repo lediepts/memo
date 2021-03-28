@@ -1,0 +1,15 @@
+body {
+    --bgColor: limegreen;
+}
+
+div {
+    background: var(--bgColor);
+}
+
+.div1 {
+    --divBg: red;
+}
+
+p {
+    background: var(--divBg);
+}

@@ -229,7 +229,7 @@
 
 ## Sử dụng CSS trong HTML
 
-- Cú pháp
+### Cú pháp
   ```css:
   Selector {
     Property : value;
@@ -238,7 +238,8 @@
   - Selector: Bộ chọn thành phần trong html -> [Các kiểu chọn](https://www.w3schools.com/cssref/css_selectors.asp)
   - Property: Thuộc tính css-> [List thuộc tính](https://www.w3schools.com/cssref/)
   - value: Giá trị của thuộc tính 
-- ví dụ
+### Ví dụ
+- tag selector
   ```css:
   p {
     background-color: yellow;
@@ -246,6 +247,23 @@
     font-size: 24px;
   }
   ```
+- class selector
+  ```css:
+  .class1 {
+    background-color: yellow;
+    color: red;
+    font-size: 24px;
+  }
+  ```
+- id selector
+  ```css:
+  #id1 {
+    background-color: yellow;
+    color: red;
+    font-size: 24px;
+  }
+  ```
+### Inline and block Element
 - Here are the block-level elements in HTML:
 
   ![block](./images/block.png)
@@ -253,15 +271,54 @@
 - Here are the inline elements in HTML:
 
   ![block](./images/inline.png)
-<!-- ## CSS selector -->
 
-<!-- ## Độ ưu tiên trong CSS -->
+## Độ ưu tiên trong CSS
+- External: Định nghĩa bên ngoài hoặc thư viện bên ngoài sau đó liên kết vào file html qua thẻ link
+```css:
+  <link rel="stylesheet" href="styles/style.css">
+```
+- Internal: Định nghĩa ngay bên trong file html với cặp thẻ
+  ```:
+  <style>
+    h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+  </style>
+  ```
+- Inline: Định nghĩa ngay bên trong thẻ với attribute style
+```:
+  <h1 style="color: blue;">Hello World!</h1>
+```
 
-<!-- ## Đặt biến trong CSS -->
+### Biến và hàm trong CSS
 
-<!-- ## Đơn vị trong CSS -->
+```css:
+  :root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --width: 1200px;
+  }
 
-<!-- ## CSS Functions -->
+  body { 
+    background-color: var(--blue);
+    width: calc(var(--width) - 30px);
+    }
+```
+
+### Đơn vị trong CSS
+- Tuyệt đối
+  - px
+  - cm
+  - inch
+- Tương đối
+  - %
+  - rem
+  - em
+  - vw
+  - vh
+
 
 <!-- ## Pseudo classes -->
 
