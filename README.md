@@ -213,6 +213,12 @@
   ```html:
   <p id="id1">Above point sounds a bit obvious. Remove/rewrite?</p>
   ```
+  - type, name, value, placeholder, checked, disabled:
+  ```html:
+  <input type="text" name="user" value="" placeholder="" >
+  <input type="checkbox" checked />
+  <input type="button" disabled>
+  ```
 - Sự kiện thường dùng
   - onclick: Sự kiện click vào element.
   - onchange: Sự kiện thay đổi giá trị ở các thẻ input.
