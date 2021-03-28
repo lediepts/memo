@@ -1,126 +1,285 @@
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-# ***Khóa học HTML***
+# **_Khóa học HTML_**
+
 - Author: <diep.le@0004s.com>
 - Create at : 03/2021
+
 ---
+
 ## Cài đặt môi trường. Làm quen với Dev tools
+
 - Cài đặt vscode
-  >[Link download](https://code.visualstudio.com/Download)
+  > [Link download](https://code.visualstudio.com/Download)
 - Cài đặt Extension cho vscode
-  - Theme
-    - [Material](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-  - Icon
-    - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+  - [Material](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): Theme
+  - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons): Icon
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Xem lịch sử sửa đổi trên git ngay dòng code.
   - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer): Tô màu các dấu ()[]{}
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Check chính tả trong khi code
-  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): Dựng 1 server chạy HTML/CSS/JS, tự động refresh trình duyệt mỗi khi bạn sửa code. 
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): Dựng 1 server chạy HTML/CSS/JS, tự động refresh trình duyệt mỗi khi bạn sửa code.
   - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) & [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag): Khi code HTML/JSX, mỗi khi tạo thêm tag mới, extension sẽ đóng tag để khỏi quên. Khi đổi tên tag, extension này sẽ đổi tên closing tag cho phù hợp luôn.
   - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense): tự động chỉ đường dẫn.
-  -  [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): hỗ trợ format code
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): hỗ trợ format code
   - [HTML](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets): Nhắc lệnh HTML
 
 ---
+
 ## **HTML, CSS** là gì?
+
 - HTML
-  - HTML là ngôn ngữ đánh dấu siêu văn bản (HyperText Markup Language - HTML) được sử dụng trong việc tạo trang web và các loại tài liệu khác có thể xem được bằng trình duyệt. 
-  - HTML là một tiêu chuẩn quốc tế, được duy trì bởi  World Wide Web Consortium - Liên hợp Web toàn cầu.
+  - HTML là ngôn ngữ đánh dấu siêu văn bản (**HyperText Markup Language** - HTML) được sử dụng trong việc tạo trang web và các loại tài liệu khác có thể xem được bằng trình duyệt.
+  - HTML là một tiêu chuẩn quốc tế, được duy trì bởi World Wide Web Consortium - Liên hợp Web toàn cầu.
   - Phiên bản hiện tại là HTML5, HTML5 vẫn đang trong quá trình phát triển.
 - CSS
-  - Cascading Style Sheets, viết tắt là CSS, là một ngôn ngữ định kiểu được sử dụng để mô tả việc trình bày một tài liệu được viết bằng HTML or XML (bao gồm các ngôn ngữ khác nhau như XML, SVG or XHTML). 
+  - **Cascading Style Sheets**, viết tắt là CSS, là một ngôn ngữ định kiểu được sử dụng để mô tả việc trình bày một tài liệu được viết bằng HTML or XML (bao gồm các ngôn ngữ khác nhau như XML, SVG or XHTML).
   - CSS mô tả cách các phần tử được hiển thị trên màn hình, trên giấy, trong lời nói, hoặc trên các phương tiện khác.
   - Phiên bản hiện tại là CSS3
+
 ---
-<!-- ## Cấu trúc file HTML
 
-## Comments trong HTML
+### Cấu trúc file HTML
 
-## Test tính cẩn thận và chỉn chu của bạn
+```javascript:
+<!DOCTYPE html>
+<html lang="en">
 
-## Thẻ HTML thông dụng
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-## Attribute trong HTML
+<body>
+  <h1>This is a Heading 1</h1>
+  <div>
+    <p>This is a paragraph.</p>
+  </div>
+</body>
 
-## Sử dụng CSS trong HTML
+</html>
+```
 
-## ID và Class
+### Comments trong HTML
 
-## CSS selector
+```javascript:
+  <!-- <h1>This is a Heading 1</h1> -->
+  <!-- comment block -->
+```
 
-## Độ ưu tiên trong CSS
+### Thẻ HTML
+- Thẻ thông dụng:
+>Thẻ cặp bắt buộc có thẻ đóng
+```javascript:
+<!-->
+<!DOCTYPE>
+<html>
+<head>
+<title>
+<meta>
+<script>
+<style>
+<body>
+<div>
+<h1> - <h6>
+<p>
+<span>
+<form>
+<button>
+```
+>Thẻ đơn đóng thẻ bởi chính nó
+```javascript:
+<a>
+<img>
+<input>
+<br>
+<hr>
+```
 
-## Đặt biến trong CSS
+- Những thẻ khác:
 
-## Đơn vị trong CSS
+> Link tham khảo [HTML-Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-## CSS Functions
+```javascript:
 
-## Pseudo classes
+<abbr>
+<header>
+<table>
+<thead>
+<tbody>
+<tr>
+<th>
+<td>
+<b>
+<i>
+<ul>
+<select>
+<svg>
+<iframe>
+<label>
+<textarea>
+<acronym>
+<address>
+<applet>
+<area>
+<article>
+<aside>
+<audio>
+<base>
+<basefont>
+<bdi>
+<bdo>
+<big>
+<blockquote>
+<canvas>
+<caption>
+<center>
+<cite>
+<code>
+<col>
+<colgroup>
+<data>
+<datalist>
+<dd>
+<del>
+<details>
+<dfn>
+<dialog>
+<dir>
+<dl>
+<dt>
+<em>
+<li>
+<ol>
+<embed>
+<fieldset>
+<figcaption>
+<figure>
+<font>
+<footer>
+<frame>
+<frameset>
+<ins>
+<kbd>
+<legend>
+<link>
+<main>
+<map>
+<mark>
+<meter>
+<nav>
+<noframes>
+<noscript>
+<object>
+<optgroup>
+<option>
+<output>
+<param>
+<picture>
+<pre>
+<progress>
+<q>
+<rp>
+<rt>
+<ruby>
+<s>
+<samp>
+<section>
+<small>
+<source>
+<strike>
+<strong>
+<sub>
+<summary>
+<sup>
+<template>
+<tfoot>
+<time>
+<track>
+<tt>
+<u>
+<var>
+<video>
+<wbr>
+```
 
-## Pseudo elements
+<!-- ## Attribute trong HTML -->
 
-## CSS Padding
+<!-- ## Sử dụng CSS trong HTML -->
 
-## CSS Border
+<!-- ## ID và Class -->
 
-## CSS Margin
+<!-- ## CSS selector -->
 
-## CSS Box-sizing
+<!-- ## Độ ưu tiên trong CSS -->
 
-## CSS Background-clip
+<!-- ## Đặt biến trong CSS -->
 
-## CSS Background-image
+<!-- ## Đơn vị trong CSS -->
 
-## CSS Background-size keywords
+<!-- ## CSS Functions -->
 
-## CSS Background-origin
+<!-- ## Pseudo classes -->
 
-## CSS Background-position
+<!-- ## Pseudo elements -->
 
-## CSS Background shorthand
+<!-- ## CSS Padding -->
 
-## CSS Position: Relative
+<!-- ## CSS Border -->
 
-## CSS Position: Absolute
+<!-- ## CSS Margin -->
 
-## CSS Position: Fixed
+<!-- ## CSS Box-sizing -->
 
-## CSS Position: Sticky
+<!-- ## CSS Background-clip -->
 
-## Giới thiệu dự án
+<!-- ## CSS Background-image -->
 
-## Phân biệt & gọi tên các thành phần
+<!-- ## CSS Background-size keywords -->
 
-## Phân tích dự án
+<!-- ## CSS Background-origin -->
 
-## Tạo project base
+<!-- ## CSS Background-position -->
 
-## Header CSS
+<!-- ## CSS Background shorthand -->
 
-## Navigation CSS
+<!-- ## CSS Position: Relative -->
 
-## Header search CSS
+<!-- ## CSS Position: Absolute -->
 
-## Header fixed CSS
+<!-- ## CSS Position: Fixed -->
 
-## Slider CSS
+<!-- ## CSS Position: Sticky -->
 
-## About section CSS
+<!-- ## Giới thiệu dự án -->
 
-## Team section CSS
+<!-- ## Phân biệt & gọi tên các thành phần -->
 
-## Tour tickets CSS
+<!-- ## Phân tích dự án -->
 
-## Tour places CSS
+<!-- ## Tạo project base -->
 
-## Row - columns layout
+<!-- ## Header CSS -->
 
-## Contact form CSS
+<!-- ## Navigation CSS -->
 
-## Map, footer CSS
+<!-- ## Header search CSS -->
+
+<!-- ## Header fixed CSS -->
+
+<!-- ## Slider CSS -->
+
+<!-- ## About section CSS -->
+
+<!-- ## Team section CSS -->
+
+<!-- ## Tour tickets CSS -->
+
+<!-- ## Tour places CSS -->
+
+<!-- ## Row - columns layout -->
+
+<!-- ## Contact form CSS -->
+
+<!-- ## Map, footer CSS
 
 ## Review
 
@@ -244,5 +403,4 @@
 
 ## Dựng khung Footer
 
-## Footer CSS
- --> 
+## Footer CSS -->
