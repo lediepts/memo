@@ -54,9 +54,23 @@
     <p>This is a paragraph.</p>
   </div>
 </body>
-
 </html>
 ```
+
+- ```<!DOCTYPE html>```:— loại tài liệu.
+
+- ```<html></html>``` — thành phần ```<html>```. Thành phần này bao bọc tất cả nội dung trên toàn bộ trang và đôi khi được gọi là phần tử gốc.
+
+- ```<head></head>```: Là nơi chứa tất cả những nội dung bạn muốn đưa vào trang HTML không phải nội dung bạn hiển thị cho người xem trang của bạn. Điều này bao gồm những thứ như keywords và mô tả trang mà bạn muốn xuất hiện trong kết quả tìm kiếm, CSS tạo kiểu cho nội dung, khai báo bộ ký tư và những thứ khác.
+
+- ```<meta charset="utf-8">```:  thành phần này đặt tài liệu của bạn sử dụng ký tự ở định dạng UTF-8, hầu hết các ký tự phần lớn là các ngôn ngữ chữ viết của con người. Về cơ bản, bây giờ nó có thể xử lý bất kỳ nội dung có thể đặt trên đó.
+
+- ```<title></title>```: Điều này đặt tiêu đề cho trang của bạn, là tiêu đề xuất hiện trong tab trình duyệt đang được tải.
+
+- ```<body></body>```: Nơi chứa tất cả nội dung mà bạn muốn hiển thị cho người dùng web khi họ truy cập trang của bạn, cho đó là văn bản, hình ảnh, video, trò chơi, bản âm thanh có thể phát hoặc bất kỳ nội dung nào khác.
+### Cấu trúc của một thành phần HTML
+
+  >![element](./images/element.png)
 
 ### Comments trong HTML
 
@@ -85,7 +99,7 @@
 <form>
 <button>
 ```
->Thẻ đơn đóng thẻ bởi chính nó
+>Thẻ rỗng không có thẻ đóng
 ```javascript:
 <a>
 <img>
@@ -96,113 +110,13 @@
 
 - Những thẻ khác:
 
-> Link tham khảo [HTML-Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+  > Link tham khảo [HTML-Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-```javascript:
-
-<abbr>
-<header>
-<table>
-<thead>
-<tbody>
-<tr>
-<th>
-<td>
-<b>
-<i>
-<ul>
-<select>
-<svg>
-<iframe>
-<label>
-<textarea>
-<acronym>
-<address>
-<applet>
-<area>
-<article>
-<aside>
-<audio>
-<base>
-<basefont>
-<bdi>
-<bdo>
-<big>
-<blockquote>
-<canvas>
-<caption>
-<center>
-<cite>
-<code>
-<col>
-<colgroup>
-<data>
-<datalist>
-<dd>
-<del>
-<details>
-<dfn>
-<dialog>
-<dir>
-<dl>
-<dt>
-<em>
-<li>
-<ol>
-<embed>
-<fieldset>
-<figcaption>
-<figure>
-<font>
-<footer>
-<frame>
-<frameset>
-<ins>
-<kbd>
-<legend>
-<link>
-<main>
-<map>
-<mark>
-<meter>
-<nav>
-<noframes>
-<noscript>
-<object>
-<optgroup>
-<option>
-<output>
-<param>
-<picture>
-<pre>
-<progress>
-<q>
-<rp>
-<rt>
-<ruby>
-<s>
-<samp>
-<section>
-<small>
-<source>
-<strike>
-<strong>
-<sub>
-<summary>
-<sup>
-<template>
-<tfoot>
-<time>
-<track>
-<tt>
-<u>
-<var>
-<video>
-<wbr>
-```
 ### HTML attributes (Thuộc tính của thẻ HTML)
 
 [Link tham khảo](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+
+  >![attribute](./images/attribute.png)
 
 - Thuộc tính thường dùng
   - class
@@ -309,22 +223,23 @@
 
 ### Đơn vị trong CSS
 - Tuyệt đối
-  - px
+  - px : điểm ảnh màn hình hiển thị
   - cm
   - inch
 - Tương đối
-  - %
-  - rem
-  - em
-  - vw
-  - vh
+  - % : phụ thuộc vào kích thước thẻ cha
+  - rem : phụ thuộc thuộc tính font-size của thẻ html (defaut 16px=1rem)
+  - em : phụ thuộc vào thuộc tính font-size của thẻ cha, ông ...
+  - vw : viewport-width
+  - vh : viewport-height
+
+## CSS Padding
 
 
 <!-- ## Pseudo classes -->
 
 <!-- ## Pseudo elements -->
 
-<!-- ## CSS Padding -->
 
 <!-- ## CSS Border -->
 
