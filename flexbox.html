@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlexBox</title>
+  <style>
+    body {
+      margin-top: 200px;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      background: #f1f1f1;
+      max-width: 960px;
+      max-height: 1000px;
+      margin: 0 auto;
+      padding: 5px;
+      display: flex;
+      align-items: stretch;
+    }
+    
+    .item {
+      background: blue;
+      color: white;
+      width: 50px;
+      text-align: center;
+      line-height: 75px;
+    }
+    
+    .item1 {
+      background-color: rgb(0, 204, 0);
+    }
+    
+    .item2 {
+      background-color: rgb(0, 151, 0);
+      flex: 1 1 100px;
+    }
+    
+    .item3 {
+      background-color: rgb(0, 104, 0);
+    }
+    
+    .item4 {
+      background-color: rgb(0, 43, 0);
+    }
+    
+    .item5 {
+      background-color: rgb(0, 10, 200);
+    }
+    
+    .item6 {
+      background-color: rgb(0, 10, 150);
+    }
+    
+    .item7 {
+      background-color: rgb(0, 10, 100);
+    }
+    
+    .item8 {
+      background-color: rgb(0, 10, 50);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2</div>
+    <div class="item item3">Item 3</div>
+    <div class="item item4">Item 4</div>
+    <div class="item item5">Item 5</div>
+    <div class="item item6">Item 6</div>
+    <div class="item item7">Item 7</div>
+    <div class="item item8">Item 8</div>
+  </div>
+</body>
+
+</html>

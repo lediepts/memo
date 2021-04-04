@@ -57,20 +57,21 @@
 </html>
 ```
 
-- ```<!DOCTYPE html>```:— loại tài liệu.
+- `<!DOCTYPE html>`:— loại tài liệu.
 
-- ```<html></html>``` — thành phần ```<html>```. Thành phần này bao bọc tất cả nội dung trên toàn bộ trang và đôi khi được gọi là phần tử gốc.
+- `<html></html>` — thành phần `<html>`. Thành phần này bao bọc tất cả nội dung trên toàn bộ trang và đôi khi được gọi là phần tử gốc.
 
-- ```<head></head>```: Là nơi chứa tất cả những nội dung bạn muốn đưa vào trang HTML không phải nội dung bạn hiển thị cho người xem trang của bạn. Điều này bao gồm những thứ như keywords và mô tả trang mà bạn muốn xuất hiện trong kết quả tìm kiếm, CSS tạo kiểu cho nội dung, khai báo bộ ký tư và những thứ khác.
+- `<head></head>`: Là nơi chứa tất cả những nội dung bạn muốn đưa vào trang HTML không phải nội dung bạn hiển thị cho người xem trang của bạn. Điều này bao gồm những thứ như keywords và mô tả trang mà bạn muốn xuất hiện trong kết quả tìm kiếm, CSS tạo kiểu cho nội dung, khai báo bộ ký tư và những thứ khác.
 
-- ```<meta charset="utf-8">```:  thành phần này đặt tài liệu của bạn sử dụng ký tự ở định dạng UTF-8, hầu hết các ký tự phần lớn là các ngôn ngữ chữ viết của con người. Về cơ bản, bây giờ nó có thể xử lý bất kỳ nội dung có thể đặt trên đó.
+- `<meta charset="utf-8">`: thành phần này đặt tài liệu của bạn sử dụng ký tự ở định dạng UTF-8, hầu hết các ký tự phần lớn là các ngôn ngữ chữ viết của con người. Về cơ bản, bây giờ nó có thể xử lý bất kỳ nội dung có thể đặt trên đó.
 
-- ```<title></title>```: Điều này đặt tiêu đề cho trang của bạn, là tiêu đề xuất hiện trong tab trình duyệt đang được tải.
+- `<title></title>`: Điều này đặt tiêu đề cho trang của bạn, là tiêu đề xuất hiện trong tab trình duyệt đang được tải.
 
-- ```<body></body>```: Nơi chứa tất cả nội dung mà bạn muốn hiển thị cho người dùng web khi họ truy cập trang của bạn, cho đó là văn bản, hình ảnh, video, trò chơi, bản âm thanh có thể phát hoặc bất kỳ nội dung nào khác.
+- `<body></body>`: Nơi chứa tất cả nội dung mà bạn muốn hiển thị cho người dùng web khi họ truy cập trang của bạn, cho đó là văn bản, hình ảnh, video, trò chơi, bản âm thanh có thể phát hoặc bất kỳ nội dung nào khác.
+
 ### Cấu trúc của một thành phần HTML
 
-  >![element](./images/element.png)
+> ![element](./images/element.png)
 
 ### Comments trong HTML
 
@@ -80,8 +81,10 @@
 ```
 
 ### Thẻ HTML
+
 - Thẻ thông dụng:
->Thẻ cặp bắt buộc có thẻ đóng
+  > Thẻ cặp bắt buộc có thẻ đóng
+
 ```javascript:
 <!-->
 <!DOCTYPE>
@@ -100,7 +103,9 @@
 <button>
 <a>
 ```
->Thẻ rỗng không có thẻ đóng
+
+> Thẻ rỗng không có thẻ đóng
+
 ```javascript:
 <img>
 <input>
@@ -116,7 +121,7 @@
 
 [Link tham khảo](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
 
-  >![attribute](./images/attribute.png)
+> ![attribute](./images/attribute.png)
 
 - Thuộc tính thường dùng
   - class
@@ -144,15 +149,19 @@
 ## Sử dụng CSS trong HTML
 
 ### Cú pháp
-  ```css:
-  Selector {
-    Property : value;
-  }
-  ```
-  - Selector: Bộ chọn thành phần trong html -> [Các kiểu chọn](https://www.w3schools.com/cssref/css_selectors.asp)
-  - Property: Thuộc tính css-> [List thuộc tính](https://www.w3schools.com/cssref/)
-  - value: Giá trị của thuộc tính 
+
+```css:
+Selector {
+  Property : value;
+}
+```
+
+- Selector: Bộ chọn thành phần trong html -> [Các kiểu chọn](https://www.w3schools.com/cssref/css_selectors.asp)
+- Property: Thuộc tính css-> [List thuộc tính](https://www.w3schools.com/cssref/)
+- value: Giá trị của thuộc tính
+
 ### Ví dụ
+
 - tag selector
   ```css:
   p {
@@ -177,7 +186,9 @@
     font-size: 24px;
   }
   ```
+
 ### Inline and block Element
+
 - Here are the block-level elements in HTML:
 
   ![block](./images/block.png)
@@ -187,10 +198,13 @@
   ![block](./images/inline.png)
 
 ## Độ ưu tiên trong CSS
+
 - External: Định nghĩa bên ngoài hoặc thư viện bên ngoài sau đó liên kết vào file html qua thẻ link
+
 ```css:
   <link rel="stylesheet" href="styles/style.css">
 ```
+
 - Internal: Định nghĩa ngay bên trong file html với cặp thẻ
   ```:
   <style>
@@ -202,6 +216,7 @@
   </style>
   ```
 - Inline: Định nghĩa ngay bên trong thẻ với attribute style
+
 ```:
   <h1 style="color: blue;">Hello World!</h1>
 ```
@@ -215,13 +230,14 @@
   --width: 1200px;
   }
 
-  body { 
+  body {
     background-color: var(--blue);
     width: calc(var(--width) - 30px);
     }
 ```
 
 ### Đơn vị trong CSS
+
 - Tuyệt đối
   - px : điểm ảnh màn hình hiển thị
   - cm
@@ -233,55 +249,109 @@
   - vw : viewport-width
   - vh : viewport-height
 
-## CSS Padding
+## CSS Padding-Border-Margin
 
+![Box Model](./images/boxmodel.png)
 
-<!-- ## Pseudo classes -->
+## CSS Background
 
-<!-- ## Pseudo elements -->
+### Background Color
 
+- Color: (Cú pháp)
 
-<!-- ## CSS Border -->
+  - rgb(red,green,blue) : rgb(255,255,255)
+  - rgba(red,green,blue,alpha) : rgba(255,255,255,0.5)
+  - #ffffff -> #000000
+  - #ffffffff -> #00000000
+  - red, blue, green, white, black
+    > [List of colors](https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F)
 
-<!-- ## CSS Margin -->
+- background-clip:
+  - default: padding-box
 
-<!-- ## CSS Box-sizing -->
+### Background Image
 
-<!-- ## CSS Background-clip -->
+- Cú pháp:
 
-<!-- ## CSS Background-image -->
+  ```css:
+  .box {
+    background-image: url(./images/block.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    <!-- background-origin: padding-box;  -->
+  }
+  ```
 
-<!-- ## CSS Background-size keywords -->
+  - or:
 
-<!-- ## CSS Background-origin -->
+  ```css:
+  .body {
+    background: url(./images/block.png) no-repeat center top /contain;
+  }
+  ```
 
-<!-- ## CSS Background-position -->
+## CSS Position
 
-<!-- ## CSS Background shorthand -->
+- Relative
+- Absolute
+- Fixed
+- Sticky
 
-<!-- ## CSS Position: Relative -->
+### Độ ưu tiên
 
-<!-- ## CSS Position: Absolute -->
+> z-index : 0 ~ 999...
 
-<!-- ## CSS Position: Fixed -->
+## CSS Flex box
 
-<!-- ## CSS Position: Sticky -->
+[Link tham khảo](https://www.w3schools.com/css/css3_flexbox.asp)
+Dưới đây là sơ đồ cấu trúc Flexbox.
+![Flex-box](./images/flex_box.jpg)
 
-<!-- ## Giới thiệu dự án -->
+- Hai thành phần quan trọng nhất trong một bố cục Flexbox là gồm flex-container và flex-item:
+
+  - flex-container: là thành phần lớn bao quanh các phần tử bên trong.
+  - flex-item: Các phần tử con của container được gọi là item, ở item bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong một container, hoặc thiết lập thứ tự hiển thị của nó.
+
+- Ngoài hai thành phần chính đó, chúng ta có thể thấy hình trên sẽ có:
+
+  - main start, main end: Khi thiết lập flexbox, điểm bắt đầu của container gọi là main start và điểm kết thúc được gọi là main end. Điều này có nghĩa, các item bên trong sẽ heienr thị từ main start đến main end (hoặc là được phép hiển thị đến main end). Và chiều vuông góc của nó là cross start, cross end cũng có ý nghĩa tương tự nhưng luôn vuông góc với main start, main end.
+  - main axis: Trục này là trục chính để điều khiển hướng mà các item sẽ hiển thị. Như bạn thấy ở trên hình main axis là trục dọc nên các item sẽ hiển thị theo chiều dọc, tuy nhiên ta có thể sử dụng thuộc tính flex-direction để thay đổi trục của main axis và lúc đó các item sẽ hiển thị theo nó. Và cross axis luôn là trục vuông góc của main axis.
+  - main size: Bạn có thể hiểu đơn giản là kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục main axis.
+  - cross size: Là kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục cross axis.
+
+- Cú pháp
+
+  - khai báo 1 element là 1 flex box
+
+  ```css:
+    element {
+      display: flex;
+      }
+  ```
+
+- Các thuộc tính của Container flex
+  - flex-direction : Chiều trục chính
+  - flex-wrap : Bọc hay không các item bên trong
+  - flex-flow : kết hợp flex-direction và flex-wrap
+  - justify-content : Căn chỉnh theo trục chính
+  - align-items : Căn chỉnh theo trục phụ
+  - align-content : Căn chỉnh item theo không gian container
+- Các thuộc tính của Item flex
+  - order : Thứ tự xuất hiện
+  - flex-grow : Mức độ chiếm hữu tối đa diện tích khi cần phải lấp đầy container
+  - flex-shrink: Mức độ co lại tối thiểu khi container không đủ diện tích
+  - flex-basis: gán cho item kích thước nhất định
+
+[Link tham khảo cách Flex box hoạt động](https://codepen.io/enxaneta/full/adLPwv)
+
+  <!-- ## Giới thiệu dự án -->
 
 <!-- ## Phân biệt & gọi tên các thành phần -->
 
 <!-- ## Phân tích dự án -->
 
 <!-- ## Tạo project base -->
-
-<!-- ## Header CSS -->
-
-<!-- ## Navigation CSS -->
-
-<!-- ## Header search CSS -->
-
-<!-- ## Header fixed CSS -->
 
 <!-- ## Slider CSS -->
 
